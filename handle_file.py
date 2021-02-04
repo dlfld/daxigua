@@ -32,6 +32,7 @@ def circle(filePath, fn, item_data):
     imb.save(save_dir)
 
 
+# 处理图片
 def pre_handle(filePath):
     flag = True
     names = os.listdir(filePath)
@@ -105,6 +106,18 @@ def get_filename_size(name):
         if name == item['name']:
             return item
     return None
+
+
+# 处理游戏名
+def change_game_name(name, filepath):
+    if name != "" and name != None:
+        js_dir = f"{filepath}\daxigua\\src\\extraSettings.js"
+        data = f'document.getElementsByTagName("title")[0].innerText = \'{name}\''
+        with open(js_dir, mode='a', encoding='utf-8') as filename:
+            content = str(data)
+            content.encode('UTF-8')
+            filename.write('\n')  # 换行
+            filename.write(content)
 
 
 if __name__ == '__main__':

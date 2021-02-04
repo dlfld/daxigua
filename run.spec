@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['run.py'],
-             pathex=['G:\\Python代码\\pyqttest'],
+             pathex=['G:\\Python代码\\合成大西瓜魔改'],
              binaries=[],
              datas=[],
              hiddenimports=[],

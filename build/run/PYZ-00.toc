@@ -1,4 +1,4 @@
-('G:\\Python代码\\pyqttest\\build\\run\\PYZ-00.pyz',
+('G:\\Python代码\\合成大西瓜魔改\\build\\run\\PYZ-00.pyz',
  [('os', 'h:\\python install\\miniconda ins\\lib\\os.py', 'PYMODULE'),
   ('subprocess',
    'h:\\python install\\miniconda ins\\lib\\subprocess.py',
@@ -690,13 +690,17 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
+  ('pkg_resources._vendor',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
+  ('pkg_resources._vendor.packaging._structures',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'h:\\python install\\miniconda '
@@ -725,17 +729,9 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\win32\\lib\\netbios.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
+  ('pkg_resources._vendor.packaging.__about__',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._typing',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.appdirs',
    'h:\\python install\\miniconda '
@@ -749,33 +745,37 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\win32comext\\shell\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
+  ('pkg_resources._vendor.packaging',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.tags',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.packaging.requirements',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
+  ('pkg_resources._vendor.packaging._typing',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
   ('pkg_resources.extern',
    'h:\\python install\\miniconda '
@@ -784,25 +784,97 @@
   ('tracemalloc',
    'h:\\python install\\miniconda ins\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('_py_abc', 'h:\\python install\\miniconda ins\\lib\\_py_abc.py', 'PYMODULE'),
   ('stringprep',
    'h:\\python install\\miniconda ins\\lib\\stringprep.py',
    'PYMODULE'),
-  ('main', 'G:\\Python代码\\pyqttest\\main.py', 'PYMODULE'),
-  ('handle_file', 'G:\\Python代码\\pyqttest\\handle_file.py', 'PYMODULE'),
+  ('_py_abc', 'h:\\python install\\miniconda ins\\lib\\_py_abc.py', 'PYMODULE'),
+  ('main', 'G:\\Python代码\\合成大西瓜魔改\\main.py', 'PYMODULE'),
+  ('handle_file', 'G:\\Python代码\\合成大西瓜魔改\\handle_file.py', 'PYMODULE'),
   ('PIL.Image',
    'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
    'PYMODULE'),
   ('PIL.GribStubImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
    'PYMODULE'),
-  ('PIL.ImageFile',
-   'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\ImageFile.py',
-   'PYMODULE'),
-  ('PIL.FtexImagePlugin',
+  ('PIL.MspImagePlugin',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'ins\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
    'PYMODULE'),
   ('PIL.SpiderImagePlugin',
    'h:\\python install\\miniconda '
@@ -811,96 +883,25 @@
   ('PIL.ImageTk',
    'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\ImageTk.py',
    'PYMODULE'),
-  ('PIL.Hdf5StubImagePlugin',
+  ('PIL.PcxImagePlugin',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.TgaImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'ins\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcoImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PsdImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FitsStubImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FpxImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PixarImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IcnsImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.features',
-   'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\features.py',
-   'PYMODULE'),
-  ('PIL.MpoImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImtImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.DdsImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BufrStubImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.GbrImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.Jpeg2KImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\ImImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FliImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\FliImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BlpImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.CurImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\CurImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WmfImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SgiImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
-   'PYMODULE'),
   ('PIL.XVThumbImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
    'PYMODULE'),
-  ('PIL.IptcImagePlugin',
+  ('PIL.FtexImagePlugin',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'ins\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
    'h:\\python install\\miniconda '
@@ -913,57 +914,56 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
-  ('PIL.XpmImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcxImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WebPImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
-   'PYMODULE'),
   ('PIL.MicImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'h:\\python install\\miniconda ins\\lib\\site-packages\\PIL\\features.py',
    'PYMODULE'),
   ('PIL.McIdasImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PalmImagePlugin',
+  ('PIL.SgiImagePlugin',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'ins\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FitsStubImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
    'PYMODULE'),
   ('PIL.SunImagePlugin',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\PIL\\SunImagePlugin.py',
    'PYMODULE'),
-  ('PIL.DcxImagePlugin',
+  ('PIL.Hdf5StubImagePlugin',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpegImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XbmImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcdImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MspImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\MspImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.EpsImagePlugin',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'ins\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
    'PYMODULE'),
   ('PIL.TiffImagePlugin',
    'h:\\python install\\miniconda '
@@ -1125,49 +1125,45 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.requirements',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('setuptools._vendor',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
-   'PYMODULE'),
   ('setuptools._vendor.packaging._typing',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_typing.py',
+   'PYMODULE'),
+  ('setuptools._vendor.pyparsing',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging.utils',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
+  ('setuptools._vendor.packaging.requirements',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._compat',
-   'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging.version',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
    'PYMODULE'),
+  ('setuptools._vendor.packaging.tags',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
   ('setuptools._vendor.packaging.markers',
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
    'PYMODULE'),
-  ('setuptools._vendor.pyparsing',
+  ('setuptools._vendor.packaging._structures',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.__about__',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._compat',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
   ('setuptools._vendor.ordered_set',
    'h:\\python install\\miniconda '
@@ -1177,9 +1173,13 @@
    'h:\\python install\\miniconda '
    'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.tags',
+  ('setuptools._vendor.packaging.specifiers',
    'h:\\python install\\miniconda '
-   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor',
+   'h:\\python install\\miniconda '
+   'ins\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'h:\\python install\\miniconda ins\\lib\\site-packages\\setuptools\\msvc.py',

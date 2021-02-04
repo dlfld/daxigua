@@ -11,30 +11,36 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QMessageBox
 
-from handle_file import pre_handle
+from handle_file import pre_handle, change_game_name
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(541, 311)
+        MainWindow.resize(590, 336)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(30, 30, 151, 21))
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(390, 230, 93, 28))
+        self.pushButton.setGeometry(QtCore.QRect(390, 260, 93, 28))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(100, 150, 341, 31))
+        self.pushButton_2.setGeometry(QtCore.QRect(100, 130, 341, 31))
         self.pushButton_2.setObjectName("pushButton_2")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(40, 80, 481, 41))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(50, 220, 281, 51))
+        self.label_3.setGeometry(QtCore.QRect(40, 240, 281, 51))
         self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(40, 200, 80, 15))
+        self.label_4.setObjectName("label_4")
+        self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
+        self.textEdit.setGeometry(QtCore.QRect(140, 190, 351, 31))
+        self.textEdit.setObjectName("textEdit")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -47,7 +53,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "合成大西瓜自定义"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "合成大西瓜自定义0.1"))
         # 禁止拉伸窗口大小
         MainWindow.setFixedSize(MainWindow.width(), MainWindow.height())
         self.label.setText(_translate("MainWindow", "选择照片文件夹路径:"))
@@ -55,6 +61,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "请选择文件夹"))
         self.label_2.setText(_translate("MainWindow", " "))
         self.label_3.setText(_translate("MainWindow", ""))
+        self.label_4.setText(_translate("MainWindow", "输入游戏名:"))
 
     # 选择文件夹
     def select_file(self):
@@ -66,6 +73,7 @@ class Ui_MainWindow(object):
         # print("\n你选择的文件夹为:")
         # print(dir_choose)
 
+    # 确定按钮
     def submit(self):
         label = self.label_2.text().strip()
         if label == "" or label == None:
@@ -76,6 +84,8 @@ class Ui_MainWindow(object):
             self.label_3.setText("正在加载.....")
             try:
                 pre_handle(filepath)
+                name = self.textEdit.toPlainText().strip()
+                change_game_name(name, filepath)
                 self.label_3.setText("转换完成,请打开utool部署")
             except Exception as e:
                 try:
